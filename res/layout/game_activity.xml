@@ -1,0 +1,194 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".StartActivity" >
+
+    <LinearLayout
+        android:id="@+id/game_player_container"
+        android:layout_width="wrap_content"
+      	android:layout_height="@dimen/card_height"
+      	android:orientation="horizontal"
+      	android:baselineAligned="true"
+	    android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true">
+        
+        <RelativeLayout 
+	      	android:id="@+id/game_player_container_1"
+	      	android:layout_width="0dp"
+	      	android:layout_height="wrap_content"
+	      	android:layout_weight="1"
+		    android:layout_marginTop="@dimen/activity_vertical_small_margin"
+	        android:layout_marginLeft="@dimen/activity_horizontal_small_margin"
+	        android:layout_marginRight="@dimen/activity_horizontal_small_margin"
+		    android:layout_marginBottom="@dimen/activity_vertical_small_margin" >
+		    
+		    <TextView
+		        android:id="@+id/game_player_1_name"
+		        
+		      	android:layout_width="match_parent"
+		      	android:layout_height="wrap_content"
+		      	
+		      	android:layout_above="@+id/game_player_1_cards"
+			    android:layout_alignParentTop="true"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentRight="true" />
+		    
+		   	<TextView
+		        android:id="@+id/game_player_1_cards"
+		        
+		      	android:layout_width="match_parent"
+		      	android:layout_height="wrap_content"
+		      	
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentRight="true"
+	      		android:layout_alignParentBottom="true" />
+		</RelativeLayout>
+		 
+    	<RelativeLayout 
+	      	android:id="@+id/game_player_container_2"
+	      	android:layout_width="0dp"
+	      	android:layout_height="wrap_content"
+	      	android:layout_weight="1"
+		    android:layout_marginTop="@dimen/activity_vertical_small_margin"
+	        android:layout_marginLeft="@dimen/activity_horizontal_small_margin"
+	        android:layout_marginRight="@dimen/activity_horizontal_small_margin"
+		    android:layout_marginBottom="@dimen/activity_vertical_small_margin" >
+		    
+		    <TextView
+		        android:id="@+id/game_player_2_name"
+		        
+		      	android:layout_width="match_parent"
+		      	android:layout_height="wrap_content"
+		      	
+		      	android:layout_above="@+id/game_player_2_cards"
+			    android:layout_alignParentTop="true"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentRight="true" />
+		    
+		   	<TextView
+		        android:id="@+id/game_player_2_cards"
+		        
+		      	android:layout_width="match_parent"
+		      	android:layout_height="wrap_content"
+		      	
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentRight="true"
+	      		android:layout_alignParentBottom="true" />
+		</RelativeLayout> 
+		 
+		<RelativeLayout 
+	      	android:id="@+id/game_player_container_3"
+	      	android:layout_width="0dp"
+	      	android:layout_height="wrap_content"
+	      	android:layout_weight="1"
+		    android:layout_marginTop="@dimen/activity_vertical_small_margin"
+	        android:layout_marginLeft="@dimen/activity_horizontal_small_margin"
+	        android:layout_marginRight="@dimen/activity_horizontal_small_margin"
+		    android:layout_marginBottom="@dimen/activity_vertical_small_margin" >
+		    
+		    <TextView
+		        android:id="@+id/game_player_3_name"
+		        
+		      	android:layout_width="match_parent"
+		      	android:layout_height="wrap_content"
+		      	
+		      	android:layout_above="@+id/game_player_3_cards"
+			    android:layout_alignParentTop="true"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentRight="true" />
+		    
+		   	<TextView
+		        android:id="@+id/game_player_3_cards"
+		        
+		      	android:layout_width="match_parent"
+		      	android:layout_height="wrap_content"
+		      	
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentRight="true"
+	      		android:layout_alignParentBottom="true" />
+		 </RelativeLayout> 
+             
+	    
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/game_filler"
+      	android:layout_width="match_parent"
+      	android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        
+        android:layout_below="@+id/game_player_container"/>
+    
+    <com.trurdilin.tichu.ui.MultipleCardView
+      	android:id="@+id/game_last_move"
+      	android:layout_width="wrap_content"
+      	android:layout_height="@dimen/card_height"
+      	android:layout_below="@+id/game_filler"
+      	android:layout_centerHorizontal="true" />
+
+   	<RelativeLayout
+   	    android:id="@+id/game_my_container"
+   	    
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+	    android:layout_alignParentBottom="true"
+      	android:layout_below="@+id/game_last_move"
+	    android:layout_marginTop="@dimen/activity_vertical_small_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_small_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_small_margin"
+	    android:layout_marginBottom="@dimen/activity_vertical_small_margin">
+   	    
+		<Button
+	        android:id="@+id/game_button_tichu"
+	        android:layout_width="wrap_content"
+	        android:layout_height="@dimen/card_height"
+	        android:visibility="gone"
+	        android:layout_above="@+id/game_player_hand"
+	        android:layout_toLeftOf="@+id/game_player_move_preparation"
+	        android:layout_alignParentTop="true"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignBottom="@+id/game_player_move_preparation"
+	        android:text="@string/game_button_grande" />
+	        
+	    <com.trurdilin.tichu.ui.MultipleCardView
+	      	android:id="@+id/game_player_move_preparation"
+	      	android:layout_width="wrap_content"
+	      	android:layout_height="@dimen/card_height"
+	        android:layout_marginLeft="@dimen/activity_horizontal_small_margin"
+	        android:layout_marginRight="@dimen/activity_horizontal_small_margin"
+	        android:layout_above="@+id/game_player_hand"
+	        android:layout_alignParentTop="true"
+	      	android:layout_centerHorizontal="true" />
+	            
+		<Button
+	        android:id="@+id/game_button_move"
+	        android:layout_width="wrap_content"
+	        android:layout_height="@dimen/card_height"
+	        android:visibility="gone"
+	        android:layout_above="@+id/game_player_hand"
+	        android:layout_toRightOf="@+id/game_player_move_preparation"
+	        android:layout_alignParentTop="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignBottom="@+id/game_player_move_preparation"
+	        android:text="@string/game_button_move" />
+	        
+	    <com.trurdilin.tichu.ui.MultipleCardView
+	      	android:id="@+id/game_player_hand"
+	      	android:layout_width="wrap_content"
+	      	android:layout_height="@dimen/card_height"
+	      	android:layout_alignParentBottom="true"
+	      	android:layout_centerHorizontal="true" />
+	    
+    </RelativeLayout>
+
+</RelativeLayout>

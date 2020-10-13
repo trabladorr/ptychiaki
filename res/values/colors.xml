@@ -1,0 +1,6 @@
+<resources>
+
+    <item name="game_background" type="color">#016341</item>
+    <item name="game_background_active" type="color">#14855d</item>
+
+</resources>

@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/waiting_choice_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/waiting_choice_kick_button"
+        android:layout_alignBottom="@+id/waiting_choice_kick_button"
+    	android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/waiting_choice_kick_button" />
+    
+    <Button
+        android:id="@+id/waiting_choice_kick_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/waiting_choice_auth_button"
+        android:layout_alignBottom="@+id/waiting_choice_auth_button"
+        android:text="@string/waiting_fixed_choice_kick_button"
+        android:layout_toLeftOf="@+id/waiting_choice_auth_button" />
+    
+    <Button
+        android:id="@+id/waiting_choice_auth_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="@string/waiting_fixed_choice_auth_button" />
+
+</RelativeLayout>

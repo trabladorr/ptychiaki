@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".WaitingActivity" >
+
+    <ProgressBar
+        android:id="@+id/waiting_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+        android:visibility="gone"
+        android:indeterminate="true" />
+    
+    <TextView
+        android:id="@+id/waiting_text_fixed_choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/waiting_progressbar"
+        android:text="@string/waiting_fixed_service_initializing" />
+
+    <LinearLayout
+        android:id="@+id/waiting_player_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/waiting_text_fixed_choice"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp" />
+    
+    <ToggleButton
+        android:id="@+id/waiting_button_ready"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+	    android:textOn="@string/waiting_button_ready"
+	    android:textOff="@string/waiting_button_not_ready"
+	    android:onClick="onToggleClicked" />
+
+</RelativeLayout>

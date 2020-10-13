@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ConfigActivity" >
+
+    <EditText
+        android:id="@+id/config_edittext_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:inputType="numberDecimal" />
+    
+    <Button
+        android:id="@+id/config_button_set_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/config_edittext_username" 
+        android:layout_alignLeft="@+id/config_edittext_username"
+        android:layout_alignBottom="@+id/config_edittext_username"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textSize="12sp"
+        android:text="@string/config_button_set_username" />
+    
+    <TextView
+        android:id="@+id/config_text_fixed_authenticated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/config_edittext_username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/config_fixed_authenticated_certs" />
+    
+    <LinearLayout
+        android:id="@+id/config_authenticated_certificates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/config_text_fixed_authenticated"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp" />
+    
+
+</RelativeLayout>

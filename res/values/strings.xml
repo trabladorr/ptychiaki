@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TichuTest25july</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+	<string name="alert_username_name">Username</string>
+	<string name="alert_username_message">Enter your User Name:</string>
+	<string name="alert_username_button_ok">OK</string>
+	<string name="alert_username_button_exit">Exit</string>
+	<string name="alert_auth_name">Authenticate Player</string>
+	<string name="alert_auth_message">Do the following codes match the other player\'s codes?</string>
+    <string name="alert_auth_button_ok">Yes</string>
+	<string name="alert_auth_button_exit">No</string>
+	<string name="alert_exit_game_name">Exit Game</string>
+	<string name="alert_exit_game_message">Do you really want to exit game?</string>
+	<string name="alert_exit_game_button_ok">Exit</string>
+	<string name="alert_exit_game_button_exit">Cancel</string>
+	<string name="alert_get_gifts_name">Gifts</string>
+	<string name="alert_get_gifts_message">The other players gave you these cards:</string>
+	<string name="alert_get_gifts_button_ok">Accept</string>
+	
+	
+	<string name="start_title">Tichu Android</string>
+	<string name="start_fixed_choice">Host a new Game or Join another\'s:</string>
+	<string name="start_fixed_choice_disabled">Please connect to a Wifi network first</string>
+	<string name="start_button_host">Host Tichu Game</string>
+	<string name="start_button_join">Join Tichu Game</string>
+	
+	<string name="config_title">Settings</string>
+	<string name="config_button_set_username">Change Username</string>
+	<string name="config_fixed_authenticated_certs">Authenticated Players:</string>
+	<string name="config_button_auth_entry_remove">Remove</string>
+	
+	<string name="waiting_title">Waiting for Players</string>
+	<string name="waiting_fixed_service_initializing">Game server initializing…</string>
+	<string name="waiting_fixed_service_closing">Returning…</string>
+	<string name="waiting_fixed_joining">Joining game…</string>
+	<string name="waiting_fixed_service_enabled">Players:</string>
+	<string name="waiting_toast_wifi_failed">Wifi Connection failed</string>
+	<string name="waiting_toast_listener_failed">Server initialization failed</string>
+	<string name="waiting_fixed_choice_kick_button">Kick</string>
+	<string name="waiting_fixed_choice_auth_button">Auth</string>
+	<string name="waiting_button_not_ready">Not Ready</string>
+	<string name="waiting_button_ready">Ready</string>
+	<string name="waiting_toast_server_closing">Game cancelled</string>
+	
+	<string name="find_title">Finding Tichu Games</string>
+	<string name="find_fixed_choice">Select game to Join:</string>
+	<string name="find_fixed_initializing">Discovery starting…</string>
+	<string name="find_fixed_closing">Discovery stopping…</string>
+	<string name="find_fixed_choice_button">Join</string>
+	<string name="find_menu_refresh">Refresh Games</string>
+	<string name="find_server_name_prefix_ends_in_s">\' Game</string>
+	<string name="find_server_name_prefix_no_s_in_end">\'s Game</string>
+	
+	<string name="game_title">Tichu</string>
+	<string name="game_button_tichu">Tichu</string>
+	<string name="game_button_grande">Grande</string>
+	<string name="game_button_no_grande">No Grande</string>
+	<string name="game_button_move">Play</string>
+	<string name="game_toast_game_crashed">Game Crashed</string>
+	<string name="game_toast_game_cancelled">Game Cancelled</string>
+	
+    
+</resources>
